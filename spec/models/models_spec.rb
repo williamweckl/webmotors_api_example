@@ -1,8 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Model, type: :model do
-  fixtures :brands
-  fixtures :models
+  fixtures :brands, :models
 
   context "when validating" do
     let(:brand){ models(:one) }
