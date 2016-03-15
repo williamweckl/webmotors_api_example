@@ -5,6 +5,6 @@ class Model < ActiveRecord::Base
   belongs_to :brand, inverse_of: :models, required: true
 
   #Validations
-  validates_presence_of :name
+  validates_presence_of :name, :webmotors_id
 
 end

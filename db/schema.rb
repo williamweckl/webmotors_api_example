@@ -21,10 +21,11 @@ ActiveRecord::Schema.define(version: 20160226182941) do
   end
 
   create_table "models", force: :cascade do |t|
-    t.integer  "brand_id",   null: false
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "brand_id",     null: false
+    t.string   "name",         null: false
+    t.integer  "webmotors_id", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end
