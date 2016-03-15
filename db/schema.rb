@@ -13,15 +13,15 @@
 
 ActiveRecord::Schema.define(version: 20160226182941) do
 
-  create_table "makes", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "webmotors_id"
+  create_table "brands", force: :cascade do |t|
+    t.string   "name",         null: false
+    t.integer  "webmotors_id", null: false
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
 
   create_table "models", force: :cascade do |t|
-    t.integer  "make_id"
+    t.integer  "brand_id",   null: false
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
