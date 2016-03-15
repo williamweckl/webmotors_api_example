@@ -1,4 +1,4 @@
-# Webmotors Brands and Models search APP
+# Webmotors Brands and Models search APP Example
 
 This application was developed for a job test to work in [ADTsys](http://www.adtsys.com.br/).
 
